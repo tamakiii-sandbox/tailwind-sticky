@@ -1,4 +1,6 @@
-.PHONY: help build watch
+.PHONY: help build watch server clean
+
+PORT_HTTP := 8888
 
 help:
 	@cat $(firstword $(MAKEFILE_LIST))
@@ -8,6 +10,9 @@ build:
 
 watch:
 	npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+server:
+	npx http-server -a 0.0.0.0 -p $(PORT_HTTP) .
 
 clean:
 	rm -rf node_modules dist
