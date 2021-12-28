@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/tamakiii-sandbox/tailwind-sticky/issues"
   },
-  "homepage": "https://github.com/tamakiii-sandbox/tailwind-sticky#readme"
+  "homepage": "https://github.com/tamakiii-sandbox/tailwind-sticky#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
+  }
 }
